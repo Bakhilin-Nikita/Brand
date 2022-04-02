@@ -1,7 +1,15 @@
+/*Oswald*/  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Oxygen&family=Quicksand:wght@300&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+h5,.team-section .under-text b,.title-main,a,button,.author,.title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+.text-block,.news .text-content .text,.phone-content .text-content,.row .text,.under-text,.advantages .main-text,.phone-content .text-content{
+    font-family: 'PT_Sans-Web-Regular','sans-serif';
 }
 a{
     font-weight: 700;
@@ -31,9 +39,7 @@ header .menu{
     background-color: #3c3e40;
 }
 header  h5{
-    font-family: Oswald;
     margin-top: 280px;
-    font-size: 16px;
     transform: rotate(90deg);
     font-weight: 800;
     font-size: 18px;
@@ -50,7 +56,6 @@ header .landing{
 }
 
 .text-block{
-    font-family: PT_Sans-Web-Regular;
     margin: 200px 100px;
     word-break: break-word;
     width: 400px;
@@ -69,27 +74,21 @@ header .landing{
 
 /* CONTENT MAIN */
 
-.title-main,a,button{
-    font-family: Oswald;
-}
 
 section{
     background-color: #ffffff;
-    padding: 0px 0px 50px;
+    padding: 0 0 50px;
 }
 .title-main{
     padding: 40px;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 32px;
 }
 .content .row .title{
-    font-family: Lobster;
+    font-family: 'Lobster', 'sans-serif';
     font-weight: 700;
     color: #3c3e40;
 }
-.row .text{
-    font-family: PT_Sans-Web-Regular;
-}
+
 
 section .row .col{
     padding: 15px;
@@ -97,37 +96,31 @@ section .row .col{
 
 
 .content-image{
-    padding: 50px 0px;
+    padding: 50px 0;
 }
 .content-image .head-content{
     text-align: center;
 }
 .content-image a{
     text-decoration: none;
-    margin: 0px 10px;
-}
-.author{
-    font-family: Lobster;
-}
-.under-text{
-    font-family: PT_Sans-Web-Regular;
+    margin: 0 10px;
 }
 .images-blocks{
-    margin: 50px 0px 25px;
+    margin: 50px 0 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 .images-blocks .block-image{
     width: 30%;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 .images-blocks img{
     width: 100%;
 }
 .images-blocks .under-text{
-    padding: 0px 30px;
-    margin: 15px 0px 0px;
+    padding: 0 30px;
+    margin: 15px 0 0;
     display: grid;
     text-align: center;
 }
@@ -150,42 +143,40 @@ section .row .col{
     text-align: center;
 }
 .advantages .title{
-    font-family: Oswald;
     font-size: 16px;
 }
 .advantages{
-    margin: 50px 0px;
+    margin: 50px 0;
     display: flex;
 }
 .advantages .text{
-    font-family: PT_Sans-Web-Italic;
-    margin: 0px 10px 0px;
+    font-family: 'PT_Sans-Web-Italic', 'sans-serif';
+    margin: 0 10px 0;
     font-size: 14px;
 }
 .advantages img{
     border-radius: 100px;
 }
-.advantages .main-text{
-    font-family: PT_Sans-Web-Regular;
+
+.skills-section .under-text,.advantages .text,.team-section .head-text{
+    font-family: 'PT_Sans-Web-Italic', 'sans-serif';
+
 }
 
 
-
 .phone-content{
-    margin: 30px 0px;
-    padding: 50px 10% 0px;
+    margin: 30px 0;
+    padding: 50px 10% 0;
     display: flex;
     justify-content: space-between;
 }
 .phone-content .title{
-    font-family: Oswald;
     font-size: 45px;
 }
 .phone-content .text-content{
     color: #faf9fb;
-    margin: 100px 0px 0px;
+    margin: 100px 0 0;
     width: 500px;
-    font-family: PT_Sans-Web-Regular;
 }
 .phone-content .more{
     color: #ffffff;
@@ -204,22 +195,22 @@ section .row .col{
 .items .block{
     padding: 15px;
     display: flex;
+    align-items: center;
 }
-.items .text{
-    font-family: Lobster;
-    margin: 0px 10px;
+.items .under-text{
+    font-family: 'Lobster','sans-serif';
+    color: #444444;
+    margin: 0 10px;
 }
-.items .title{
-    font-family: Oswald;
-    font-weight: 700;
-}
-.team-section .head-text{
-    font-family: PT_Sans-Web-Italic;
-    font-style: italic;
+.items .text .title{
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 24px;
 }
 
+
 .team-section{
-    padding: 0px 5%;
+    padding: 0 5%;
 }
 .team-section .head-content{
     width: 30%;
@@ -232,6 +223,7 @@ section .row .col{
 .team-section .under-text{
     padding: 0;
 }
+
 
 .video-section{
    background-color: #babcc2;
@@ -248,11 +240,6 @@ section .row .col{
     text-align: center;
 }
 
-.skills-section{
-    /*padding: 50px 25%;*/
-}
-
-
 
 .skills-section .main-content{
     display: flex;
@@ -261,9 +248,11 @@ section .row .col{
     width: 60%;
     padding: 10px;
 }
-
+.skills-section .under-text{
+    opacity: 0.7;
+}
 .skills-section .title{
-    margin: 15px 0px;
+    margin: 15px 0;
 }
 
 .skills-section .diagram{
@@ -276,11 +265,12 @@ section .row .col{
     text-align: end;
     margin-left: 10px;
     width: 60%;
-    background-color: #3c3e40;
+    background-color: #292929;
     color: #fdfbff;
 }
 
 .diagram .name p{
+    color: #c7c7c7;
     margin: 15% 5%;
 }
 
@@ -295,7 +285,7 @@ section .row .col{
 .company .block{
     border: 1px solid #00cccc ;
     flex: 1 0 auto; /* разбивает блоки на равную длину */
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 .company .block .logo{
     text-align: center;
@@ -315,15 +305,16 @@ section .row .col{
 .quote-content .content{
     display: -webkit-box;
     font-size: 25px;
-    margin: 0px 0px 100px 300px;
+    margin: 0 0 100px 300px;
 }
 .quote blockquote{
-    font-family: PT_Sans-Web-Regular;
+    font-family: 'PT_Sans-Web-Italic','sans-serif';
     word-break: break-word;
     margin-left: 15px;
+    font-size: 14px;
 }
 blockquote p{
-    font-family: Lobster;
+    font-family: 'Lobster','sans-serif';
     text-align: end;
 }
 
@@ -344,20 +335,20 @@ blockquote p{
 
 
 .news{
-    padding: 0px 20% 50px;
+    padding: 0 20% 50px;
 }
 .news .title{
     text-align: center;
-    margin: 0px auto 50px;
+    margin: 0 auto 50px;
     width: 60%;
 }
 .news .block{
     word-break: break-word;
     display: flex;
-    margin: 0px 0px 15px;
+    margin: 0 0 15px;
 }
 .news .title-block{
-    margin: 0px 0px 20px;
+    margin: 0 0 20px;
 }
 .news .text-content{
     margin-left: 15px;
@@ -367,7 +358,7 @@ blockquote p{
     opacity: 0.7;
 }
 .news .btn{
-    margin: 25px 0px 0px;
+    margin: 25px 0 0;
     width: 100%;
     text-align: center;
 }
@@ -375,9 +366,7 @@ blockquote p{
     color: black;
     font-weight: 600;
 }
-.news .text-content .text{
-    font-family: PT_Sans-Web-Regular;
-}
+
 .news .image-block{
     width: 57%;
 }
@@ -399,7 +388,7 @@ blockquote p{
     text-align: center;
 }
 .form .form-input{
-    margin: 25px 0px;
+    margin: 25px 0;
     width: 100%;
 }
 .form-input input{
@@ -415,7 +404,7 @@ blockquote p{
     background-color: inherit;
     border: 0;
     text-decoration: underline;
-    margin: 25px 0px 0px;
+    margin: 25px 0 0;
     font-size: 18px;
     font-weight: 700;
 }
@@ -424,25 +413,25 @@ blockquote p{
 }
 
 .content{
-    padding: 0px 0px;
+    padding: 0 0;
 }
 .contacts .title{
     text-align: center;
-    margin: 0px 0px 50px;
+    margin: 0 0 50px;
 }
 .contacts span{
     opacity: 0.7;
 }
 .contacts .block-media-image{
+    text-align: center;
     display: flex;
     justify-content: space-between;
 }
 .contacts .wave{
-    margin: 0px 0px 30px;
+    margin: 0 0 30px;
 }
-.contacts .block{
-    font-family: Oswald;
-    font-weight: Bold;
+.contacts .block .title-main{
+    font-size: 32px;
     text-align: center;
     flex:  1 0 auto;
 }
@@ -454,10 +443,10 @@ footer{
 }
 footer .media-links{
     margin: 0 auto;
-    padding: 70px 0px;
+    padding: 70px 0;
 }
 footer .logo{
-    margin: 0px 0px 30px;
+    margin: 0 0 30px;
 }
 footer .title-main{
     padding: 0;
@@ -474,10 +463,14 @@ footer .links{
     font-style: italic;
 }
 
+/*FONTS*/
 
 @font-face {
     font-family: Oswald;
     src: url("../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+    font-family: Oswald;
     src: url("../fonts/Oswald-Light.ttf");
 }
 @font-face {
