@@ -86,7 +86,6 @@ header .landing{
 
 section{
     background-color: #ffffff;
-    padding: 0 0 94px;
 }
 .title-main{
     padding: 40px;
@@ -149,7 +148,6 @@ section .row .col{
 }
 .models{
     background-color: #f9f9f9;
-    padding: 80px 0;
 }
 
 .advantages-content{
@@ -177,8 +175,7 @@ section .row .col{
 
 
 .phone-content{
-    margin: 30px 0;
-    padding: 50px 10% 0;
+    padding: 50px 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -269,15 +266,13 @@ section .row .col{
 }
 
 .skills-section .diagram{
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     display: inline-block;
     /*justify-content: space-between;*/
 }
 
 .diagram .name{
-    text-align: end;
     margin-left: 10px;
-    width: 60%;
     background-color: #292929;
     color: #fdfbff;
 }
@@ -286,7 +281,24 @@ section .row .col{
     color: #c7c7c7;
     margin: 15% 5%;
 }
-
+.diagram .n1{
+    width: 60%;
+}
+.diagram .n2{
+    width: 63%;
+}
+.diagram .n3{
+    width: 65%;
+}
+.diagram .n4{
+    width: 57%;
+}
+.diagram .n5{
+    width: 61%;
+}
+.diagram .n6{
+    width: 55%;
+}
 .company{
     margin: 0;
     padding: 0;
@@ -302,6 +314,9 @@ section .row .col{
 }
 .company .block .logo{
     text-align: center;
+}
+.logo img{
+    max-width: 100%;
 }
 
 
@@ -345,7 +360,6 @@ blockquote p{
     cursor: default; /*  курсор в виде стрелки */
     color: #888;/* цвет текста серый */
 }
-
 
 .news{
     padding: 0 20% 50px;
@@ -478,6 +492,9 @@ footer .links{
     display: flex;
     width: fit-content;
     margin: 0 auto;
+}
+footer .block-link:hover{
+    opacity: 0.5;
 }
 
 

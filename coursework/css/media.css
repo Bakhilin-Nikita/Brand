@@ -10,6 +10,9 @@
         padding: 0;
         box-sizing: border-box;
     }
+    .title-main{
+        font-size: 1.2rem;
+    }
     .container{
         max-width: 100%;
         width: 100%;
@@ -51,6 +54,10 @@
         justify-content: center;
         width: 45%;
     }
+    .items .image{
+        width: 80px;
+        text-align: center;
+    }
     .team-section .content-image{
         padding: 0;
     }
@@ -67,7 +74,7 @@
         flex-direction: column;
     }
     .skills-section .diagram{
-        transform: rotate(90deg);
+        /*transform: rotate(90deg);*/
     }
     /*.diagram .name{*/
     /*    height: 150px;*/
@@ -78,6 +85,9 @@
     .main-block .block{
         width: 30%;
     }
+    .video-section{
+        height: 300px;
+    }
     .news{
         padding: 0;
     }
@@ -85,6 +95,7 @@
         width: 100%;
     }
     .news .block{
+        margin: 40px 0;
         flex-direction: column;
     }
     .news .content-block .block{
@@ -96,8 +107,11 @@
     .block .image-block,.block .text-content{
         text-align: center;
     }
+    .quote-content img{
+        width: 1.5rem;
+    }
     .quote .quote-content{
-        padding: 50px;
+        padding: 15px;
     }
     .quote-content .content{
         margin: 0;
@@ -109,25 +123,63 @@
 
 
 @media screen and (max-width: 578px){
+    header{
+        display: grid;
+        height: auto;
+    }
+    header .menu{
+        padding: 10px;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+    }
+    header h5{
+        margin: 0 auto;
+        transform: none;
+    }
+    .menu .fa-bars{
+        margin-top: 0;
+    }
     .block-media-image{
         flex-wrap: wrap;
     }
     .block-media-image .block{
         margin-top: 20px;
-        width: 90%;
+        width: 100%;
+    }
+    .advantages {
+        display: grid;
+        text-align: center;
     }
     .images-blocks{
         justify-content: center;
     }
     .images-blocks .block-image{
-        width: 90%;
+        width: 100%;
+    }
+    footer .media-links{
+        padding: 0;
     }
     footer .links{
         flex-wrap: wrap;
         justify-content: center;
     }
-    .news img{
+    .models .links a{
+        display: grid;
+    }
+    footer img{
+        width: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 466px){
+    .items-section .items .block{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .skills-section .text{
         width: 100%;
     }
-
 }
