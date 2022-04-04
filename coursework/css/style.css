@@ -443,6 +443,9 @@ blockquote p{
 .content{
     padding: 0 0;
 }
+.contacts .container{
+    padding: 5%;
+}
 .contacts .title{
     text-align: center;
     margin: 0 0 50px;
