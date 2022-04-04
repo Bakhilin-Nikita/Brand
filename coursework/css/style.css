@@ -4,17 +4,26 @@
     margin: 0;
     box-sizing: border-box;
 }
-h5,.team-section .under-text b,.title-main,a,button,.author,.title{
+h5,.team-section .under-text b,.title-main,a,button,.title{
     font-family: 'Oswald', sans-serif;
     font-weight: bold;
 }
 .text-block,.news .text-content .text,.phone-content .text-content,.row .text,.under-text,.advantages .main-text,.phone-content .text-content{
     font-family: 'PT_Sans-Web-Regular','sans-serif';
 }
+.skills-section .under-text,.advantages .text,.team-section .head-text{
+    font-family: 'PT_Sans-Web-Italic', 'sans-serif';
+}
 a{
     font-weight: 700;
     color: #3b2127;
     text-decoration: underline 1px black;
+}
+
+/*-----------------------------*/
+
+.a-all{
+    color: #cecece;
 }
 .menu .fa-bars{
     margin-top: 20%;
@@ -77,7 +86,7 @@ header .landing{
 
 section{
     background-color: #ffffff;
-    padding: 0 0 50px;
+    padding: 0 0 94px;
 }
 .title-main{
     padding: 40px;
@@ -119,10 +128,14 @@ section .row .col{
     width: 100%;
 }
 .images-blocks .under-text{
+    font-family: 'PT_Sans-Web-Italic';
     padding: 0 30px;
     margin: 15px 0 0;
     display: grid;
     text-align: center;
+}
+.images-blocks .author{
+    font-family: 'Lobster_1_4_Regular','sans-serif';
 }
 .images-blocks span{
     opacity: 0.8;
@@ -134,10 +147,13 @@ section .row .col{
     font-size: 18px;
     text-decoration: underline 2px black;
 }
-
+.models{
+    background-color: #f9f9f9;
+    padding: 80px 0;
+}
 
 .advantages-content{
-    padding: 40px 15%;
+    padding: 0px 15%;
 }
 .advantages-content .title-main{
     text-align: center;
@@ -146,7 +162,7 @@ section .row .col{
     font-size: 16px;
 }
 .advantages{
-    margin: 50px 0;
+    padding: 20px;
     display: flex;
 }
 .advantages .text{
@@ -158,10 +174,6 @@ section .row .col{
     border-radius: 100px;
 }
 
-.skills-section .under-text,.advantages .text,.team-section .head-text{
-    font-family: 'PT_Sans-Web-Italic', 'sans-serif';
-
-}
 
 
 .phone-content{
@@ -219,11 +231,12 @@ section .row .col{
 .team-section .block-image{
     width: 20%;
 }
-
 .team-section .under-text{
     padding: 0;
 }
-
+.team-section b{
+    text-transform: uppercase;
+}
 
 .video-section{
    background-color: #babcc2;
@@ -403,13 +416,14 @@ blockquote p{
 .form button{
     background-color: inherit;
     border: 0;
-    text-decoration: underline;
+    text-decoration: none;
     margin: 25px 0 0;
     font-size: 18px;
     font-weight: 700;
 }
 .form button:hover{
-    color: #0c0a08;
+    text-decoration: underline;
+    color: #a23b3b;
 }
 
 .content{
@@ -419,16 +433,25 @@ blockquote p{
     text-align: center;
     margin: 0 0 50px;
 }
-.contacts span{
+.contacts .under-text{
+    width: 85%;
+    margin: 0 auto;
+}
+.contacts .under-text span{
     opacity: 0.7;
 }
 .contacts .block-media-image{
+    font-family: 'Oswald-Regular','sans-serif';
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
 .contacts .wave{
-    margin: 0 0 30px;
+    margin: 39px 0;
+}
+.contacts .title .title-main{
+    padding: 0;
+    margin: 94px 0 0;
 }
 .contacts .block .title-main{
     font-size: 32px;
@@ -464,6 +487,10 @@ footer .links{
 }
 
 /*FONTS*/
+@font-face {
+    font-family: Oswald-Regular;
+    src: url("../fonts/Oswald-Regular.ttf");
+}
 
 @font-face {
     font-family: Oswald;
@@ -493,6 +520,9 @@ footer .links{
     font-family: PT_Sans-Web-Regular;
     src: url("../fonts/PT_Sans-Web-Regular.ttf");
 }
-
+@font-face {
+    font-family: Lobster_1_4_Regular;
+    src: url("../fonts/Lobster_1_4_Regular.ttf");
+}
 
 
