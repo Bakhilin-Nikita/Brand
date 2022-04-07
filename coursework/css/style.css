@@ -63,6 +63,9 @@ header .landing{
     margin: 0;
     padding: 0;
 }
+.phone-content .more:hover{
+    color: #3c3e40;
+}
 
 .text-block{
     margin: 200px 100px;
@@ -270,7 +273,9 @@ section .row .col{
     display: inline-block;
     /*justify-content: space-between;*/
 }
-
+.diagram-content{
+    padding: 40px 0;
+}
 .diagram .name{
     margin-left: 10px;
     background-color: #292929;
